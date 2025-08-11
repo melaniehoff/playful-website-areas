@@ -1,0 +1,15 @@
+
+body,html{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    border: 10px dotted violet;
+}
+
+body {
+  padding: 1em;
+  text-align: left;
+  font-size: 4em;
+  font-family: 'Supermercado One', cursive;
+  color: black;
+}

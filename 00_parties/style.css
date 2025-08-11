@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kumar+One&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap');
+
+.playwrite-gb-s-<uniquifier> {
+  font-family: "Playwrite GB S", cursive;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+.kumar-one-regular {
+  font-family: "Kumar One", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: monospace;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
+body {
+  font-family: "Playwrite GB S";
+  background-color: hsl(235, 100%, 80%);
+  color: yellow;
+  text-align: center;
+  font-size: 1em;
+}
+
+
+div {
+  padding: 55px;
+  border: thin solid black;
+  color: white;
+}
+
+.banana {
+  background-color: red;
+}
+
+.orange {
+  background-color: orange;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.green {
+  background-color: #00ff00;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.violet {
+  background-color: violet;
+  color: black;
+}
+
+h1 {
+  font-family: "Kumar One", serif;
+  font-size: 4em;
+  background: #FF0000;
+background: radial-gradient(circle farthest-corner at center center, #FF0000 0%, #FFFF00 25%, #05C1FF 50%, #FFFF00 75%, #FF0000 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
+.my-fun-class {
+  width: 50%;
+  color: black;
+  border: 2px solid limegreen;
+  display: block;
+  margin: auto;
+  text-align: left;
+}
+
+
+ul li {
+    list-style: square;
+}
+
+ul li::marker {
+    animation-name: GFG;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+ul li:nth-child(1)::marker {
+    animation-delay: 0;
+}
+
+ul li:nth-child(12)::marker {
+    animation-delay: 0.5s;
+}
+
+ul li:nth-child(16)::marker {
+    animation-delay: 1.0s;
+}
+
+ul li:nth-child(20)::marker {
+    animation-delay: 1.5s;
+}
+
+ul li:nth-child(5)::marker {
+    animation-delay: 2.0s;
+}
+
+@keyframes GFG {
+    from {
+        font-size: 12px;
+    }
+
+    to {
+        font-size: 30px;
+        color: limegreen;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: black;
+  }
+
+  h1 {
+    font-size: 1em;
+  }
+
+}
